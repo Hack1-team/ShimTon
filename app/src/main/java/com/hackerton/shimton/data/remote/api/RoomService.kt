@@ -1,6 +1,8 @@
 package com.hackerton.shimton.data.remote.api
 
 import com.hackerton.shimton.data.remote.dto.Room
+import com.hackerton.shimton.data.remote.dto.User
+import com.hackerton.shimton.util.Network.MAKE_ROOM
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -17,5 +19,14 @@ interface RoomService {
     suspend fun searchRoomList(): Response<List<Room>>
 
     // 행사 추가
-    suspend fun makeRoom(room: Room): Response<Room>
+    @POST(MAKE_ROOM)
+    suspend fun makeRoom(@Body room: Room): Response<Room>
+
+//    @POST(MAKE_ROOM)
+    suspend fun enterRoom(@Body room: Room): Response<Room>
+
+    //로그인
+    //todo reqeust값, response값
+    suspend fun login(roomId: Long, nickname: String, password: String): Response<User>
+
 }
