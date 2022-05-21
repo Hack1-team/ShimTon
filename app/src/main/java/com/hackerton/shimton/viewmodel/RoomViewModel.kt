@@ -59,7 +59,7 @@ class RoomViewModel : ViewModel() {
     fun makeRoom(room: Room) = viewModelScope.launch{
         var response: Response<Room>? = null
         val job = launch(Dispatchers.Main + exceptionHandler) {
-            response = RoomRepository.INSTANCE.makeRoom()
+            response = RoomRepository.INSTANCE.makeRoom(room)
         }
         job.join()
         response?.let {

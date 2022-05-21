@@ -13,6 +13,7 @@ import android.widget.NumberPicker
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.hackerton.shimton.R
 import com.hackerton.shimton.data.remote.dto.Room
 import com.hackerton.shimton.databinding.ActivityHomeBinding
@@ -102,10 +103,13 @@ class HomeActivity : AppCompatActivity() {
 
                 if(name.isEmpty()){
                     tvDialogCreateRoomCodeError.text = "이름을 입력해 주세요."
+                    tvDialogCreateRoomNameError.isVisible =  true
                     return@setOnClickListener
                 }
+
                 if(password.isEmpty()){
                     tvDialogCreateRoomCodeError.text = "비밀번호를 입력해 주세요."
+                    tvDialogCreateRoomCodeError.isVisible =  true
                     return@setOnClickListener
                 }
 

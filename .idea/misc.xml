@@ -13,6 +13,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14766970618034447" />
         <entry key="app/src/main/res/layout/dialog_eventpage_create.xml" value="0.1" />
         <entry key="app/src/main/res/layout/dialog_eventpage_password.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/dialog_eventpage_profile.xml" value="0.14635416666666667" />
         <entry key="app/src/main/res/layout/item_eventpage.xml" value="0.1" />
       </map>
     </option>
