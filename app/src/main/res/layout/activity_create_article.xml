@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/home_background_color">
+    <TextView
+        android:id="@+id/tv_create_article_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="해커톤명"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_create_article_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/iv_create_article_icon">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_create_articles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_eventpage_article"
+            app:layout_constraintTop_toBottomOf="@id/tv_create_article_title"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_create_article_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/create_room_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
