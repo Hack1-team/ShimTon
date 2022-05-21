@@ -9,7 +9,7 @@ import retrofit2.http.*
 interface RoomService {
 
     //행사 리스트 받아오기
-//    @GET("${COMMENT}/{id}")
+    @GET("/")
     suspend fun getRoomList(): Response<List<Room>>
 
 
@@ -19,8 +19,8 @@ interface RoomService {
     suspend fun searchRoomList(): Response<List<Room>>
 
     // 행사 추가
-    @POST(MAKE_ROOM)
-    suspend fun makeRoom(@Body room: Room): Response<Room>
+    @POST("/${MAKE_ROOM}")
+    suspend fun makeRoom(@Body room: Room): Response<String?>
 
 //    @POST(MAKE_ROOM)
     suspend fun enterRoom(@Body room: Room): Response<Room>
