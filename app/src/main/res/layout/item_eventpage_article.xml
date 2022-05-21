@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_eventpage_article_icon"
+        android:backgroundTint="@color/article_color"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <ImageView
+        android:id="@+id/iv_eventpage_article_icon"
+        android:src="@drawable/ic_article_icon"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/cv_item_eventpage_article_icon"
+        app:layout_constraintStart_toStartOf="@id/cv_item_eventpage_article_icon"
+        app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>/>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/eventpage_article_icon_position"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="@id/cv_item_eventpage_article_icon"
+        app:layout_constraintStart_toStartOf="@id/cv_item_eventpage_article_icon"
+        app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_eventpage_article"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/article_color"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventpage_article_icon_position">
+
+        <TextView
+            android:id="@+id/tv_eventpage_article_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="8시에 저녁 먹을 사람"
+            android:layout_gravity="left|center"/>
+
+        <ImageView
+            android:id="@+id/iv_eventpage_article_arrow_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_article_arrow_off"
+            android:layout_gravity="right|center"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_eventpage_article_arrow_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_article_arrow_on"
+            android:layout_gravity="right|center"
+            />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

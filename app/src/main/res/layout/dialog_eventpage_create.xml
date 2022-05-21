@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_dialog_create_room_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Run"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_create_room_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="해커톤의 이름과 비밀코드를 설정해주세요."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dialog_create_room_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- name -->
+    <LinearLayout
+        android:id="@+id/layout_dialog_create_room_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_dialog_create_room_exp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_dialog_create_room_exp"
+        app:layout_constraintStart_toStartOf="@+id/tv_dialog_create_room_exp">
+
+        <EditText
+            android:id="@+id/et_dialog_create_room_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_border_radius"
+            android:hint="Name"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_create_room_name_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="올바른 이름이 아닙니다."
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/et_dialog_create_room_name_input"
+            app:layout_constraintTop_toBottomOf="@id/et_dialog_create_room_name_input"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!--    password    -->
+    <LinearLayout
+        android:id="@+id/layout_dialog_create_room_code_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog_create_room_name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_dialog_create_room_exp"
+        app:layout_constraintStart_toStartOf="@+id/tv_dialog_create_room_exp">
+        <EditText
+            android:id="@+id/et_dialog_profile_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_border_radius"
+            android:hint="Code"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_create_room_code_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="올바른 비밀번호가 아닙니다."
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/et_dialog_profile_password"
+            app:layout_constraintTop_toBottomOf="@id/et_dialog_profile_password"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_dialog_create_room_complete"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:text="해커톤 생성하기"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#A3A9B3"
+        app:layout_constraintStart_toStartOf="@id/tv_dialog_create_room_exp"
+        app:layout_constraintTop_toBottomOf="@id/layout_dialog_create_room_code_input"
+        app:layout_constraintEnd_toEndOf="@id/layout_dialog_create_room_code_input"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
