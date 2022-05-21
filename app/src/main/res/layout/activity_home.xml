@@ -52,7 +52,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/iv_main_logo" />
 
-        <ImageView
+        <View
+            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
@@ -71,16 +72,16 @@
             android:layout_marginRight="25dp"
             android:background="@drawable/shape_double_line_layout"
             android:hint="트랙 검색하기"
+            android:textSize="16sp"
             android:paddingLeft="50dp"
-            app:layout_constraintBottom_toBottomOf="@id/et_home_search"
-            app:layout_constraintStart_toStartOf="@id/et_home_search"
-            app:layout_constraintTop_toTopOf="@id/et_home_search" />
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view" />
 
         <ImageView
             android:id="@+id/iv_home_search_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:src="@drawable/search_icon"
@@ -92,9 +93,7 @@
             android:id="@+id/rv_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@id/et_home_search"
