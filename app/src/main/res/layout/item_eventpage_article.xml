@@ -14,15 +14,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-    <ImageView
-        android:id="@+id/iv_eventpage_article_icon"
-        android:src="@drawable/ic_article_icon"
-        android:layout_width="110dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="@id/cv_item_eventpage_article_icon"
-        app:layout_constraintStart_toStartOf="@id/cv_item_eventpage_article_icon"
-        app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>
+        <ImageView
+            android:id="@+id/iv_eventpage_article_icon"
+            android:src="@drawable/ic_article_icon"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/cv_item_eventpage_article_icon"
+            app:layout_constraintStart_toStartOf="@id/cv_item_eventpage_article_icon"
+            app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>
     </androidx.cardview.widget.CardView>
 
     <View
@@ -72,8 +72,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:src="@drawable/ic_article_arrow"
             android:layout_gravity="right|center"/>
+<!--        android:src="@drawable/ic_article_arrow"-->
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

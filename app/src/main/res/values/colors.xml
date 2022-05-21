@@ -12,4 +12,6 @@
     <color name="red">#CC6666</color>
     <color name="border_color">#EB6371</color>
     <color name="splash_background">#8BD8CA</color>
+    <color name="home_background_color">#EEF1F4</color>
+
 </resources>
