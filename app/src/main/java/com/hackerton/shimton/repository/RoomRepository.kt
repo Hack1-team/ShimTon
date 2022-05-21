@@ -23,6 +23,9 @@ class RoomRepository {
         return RetrofitClient.roomService.searchRoomList()
     }
 
+    suspend fun makeRoom(): Response<Room>{
+        return RetrofitClient.roomService.makeRoom()
+    }
 
 
 }

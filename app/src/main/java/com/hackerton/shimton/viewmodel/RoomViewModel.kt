@@ -55,6 +55,36 @@ class RoomViewModel : ViewModel() {
         job?.cancel()
     }
 
+
+    fun makeRoom(room: Room) = viewModelScope.launch{
+        var response: Response<Room>? = null
+        val job = launch(Dispatchers.Main + exceptionHandler) {
+            response = RoomRepository.INSTANCE.makeRoom()
+        }
+        job.join()
+        response?.let {
+            if (it.isSuccessful) {
+                it.body()?.let { result ->
+                    when (it.code()) {
+                        200 -> {
+                            //업데디트 완료시 리스트뷰 갱신
+                            _toastMessage.postValue("트랙이 생성되었습니다.")
+                            getRoomList()
+                        }
+                        else -> onError(it.message())
+                    }
+                }
+            } else {
+                it.errorBody()?.let { errorBody ->
+                    RetrofitClient.getErrorResponse(errorBody)?.let {
+                        onError(it.message)
+                        Log.d("viewmodel", "observerDatas: $it")
+                    }
+                }
+            }
+        }
+    }
+
     fun searchRoomList(searchData: String) = viewModelScope.launch {
 
         if(searchData.isEmpty()){
@@ -93,13 +123,13 @@ class RoomViewModel : ViewModel() {
     fun getRoomList() = viewModelScope.launch {
 
         val list = listOf<Room>(
-            Room("너디너리 해커톤1"),
-            Room("쉼톤 해커톤2"),
-            Room("cmc 해커톤3"),
-            Room("umc 해커톤4"),
-            Room("메이커스 해커톤5"),
-            Room("프론트원 해커톤6"),
-            Room("너디너리 해커톤7")
+            Room("너디너리 해커톤1","1234"),
+            Room("쉼톤 해커톤2","1234"),
+            Room("cmc 해커톤3","1234"),
+            Room("umc 해커톤4","1234"),
+            Room("메이커스 해커톤5","1234"),
+            Room("프론트원 해커톤6","1234"),
+            Room("너디너리 해커톤7","1234")
         )
 
         _roomList.postValue(list)

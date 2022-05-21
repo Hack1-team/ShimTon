@@ -1,11 +1,22 @@
 package com.hackerton.shimton.view
 
+import android.annotation.SuppressLint
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
+import android.widget.Button
+import android.widget.NumberPicker
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.core.content.ContextCompat
+import com.hackerton.shimton.R
+import com.hackerton.shimton.data.remote.dto.Room
 import com.hackerton.shimton.databinding.ActivityHomeBinding
+import com.hackerton.shimton.databinding.DialogEventpageCreateBinding
 import com.hackerton.shimton.view.adapter.RoomAdapter
 import com.hackerton.shimton.view.listener.setOnSingleClickListener
 import com.hackerton.shimton.viewmodel.RoomViewModel
@@ -61,6 +72,8 @@ class HomeActivity : AppCompatActivity() {
         //todo room 추가
         ibHomeAddEventpage.setOnSingleClickListener {
 
+            showCreateDialog()
+
         }
 
         //todo room search 추가
@@ -69,6 +82,44 @@ class HomeActivity : AppCompatActivity() {
             roomViewModel.searchRoomList(data)
         }
 
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun showCreateDialog() {
+
+        val dialogView = Dialog(this)
+        val dialogBinding = DialogEventpageCreateBinding.inflate(layoutInflater)
+        dialogView.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialogView.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialogView.setContentView(dialogBinding.root)
+        dialogView.show()
+
+        dialogBinding.apply {
+            btnDialogCreateRoomComplete.setOnClickListener {
+                val name = etDialogCreateRoomNameInput.text.toString()
+                val password = etDialogRoomPassword.text.toString()
+
+                if(name.isEmpty()){
+                    tvDialogCreateRoomCodeError.text = "이름을 입력해 주세요."
+                    return@setOnClickListener
+                }
+                if(password.isEmpty()){
+                    tvDialogCreateRoomCodeError.text = "비밀번호를 입력해 주세요."
+                    return@setOnClickListener
+                }
+
+                roomViewModel.makeRoom(
+                    Room(name, password)
+                )
+                dialogView.dismiss()
+
+            }
+        }
+//        val saveButton = dialogView.findViewById<Button>(R.id.saveButton)
+//        val allPeriodButton = dialogView.findViewById<Button>(R.id.allPeriodButton)
+//        val yearPicker = dialogView.findViewById<NumberPicker>(R.id.yearPicker)
+//        val monthPicker = dialogView.findViewById<NumberPicker>(R.id.monthPicker)
 
     }
 

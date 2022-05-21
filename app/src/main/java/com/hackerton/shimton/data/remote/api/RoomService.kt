@@ -17,4 +17,5 @@ interface RoomService {
     suspend fun searchRoomList(): Response<List<Room>>
 
     // 행사 추가
+    suspend fun makeRoom(): Response<Room>
 }
