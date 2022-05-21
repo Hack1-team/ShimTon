@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@drawable/shape_dialog">
 
         <TextView
             android:id="@+id/tv_dialog_create_room_title"
@@ -108,7 +108,7 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_dialog_create_room_complete"
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="56dp"
             android:text="생성하기"
             android:textSize="16sp"
             android:textColor="@color/white"
