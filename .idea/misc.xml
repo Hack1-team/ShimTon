@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_home_search.xml" value="0.1" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_home.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/dialog_eventpage_password.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_eventpage.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.15476190476190477" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14766970618034447" />
         <entry key="app/src/main/res/layout/item_eventpage.xml" value="0.15476190476190477" />
