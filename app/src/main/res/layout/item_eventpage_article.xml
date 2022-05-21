@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@id/cv_item_eventpage_article_icon"
         app:layout_constraintStart_toStartOf="@id/cv_item_eventpage_article_icon"
-        app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>/>
+        app:layout_constraintTop_toTopOf="@id/cv_item_eventpage_article_icon"/>
     </androidx.cardview.widget.CardView>
 
     <View
@@ -45,31 +45,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/eventpage_article_icon_position">
 
-        <TextView
-            android:id="@+id/tv_eventpage_article_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="8시에 저녁 먹을 사람"
-            android:layout_gravity="left|center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left|center">
+            <TextView
+                android:id="@+id/tv_eventpage_article_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="닉네임"/>
+
+            <TextView
+                android:id="@+id/tv_eventpage_article_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="내용"/>
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/iv_eventpage_article_arrow_off"
+            android:id="@+id/iv_eventpage_article_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:src="@drawable/ic_article_arrow_off"
-            android:layout_gravity="right|center"
-            android:visibility="gone"/>
-
-        <ImageView
-            android:id="@+id/iv_eventpage_article_arrow_on"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/ic_article_arrow_on"
-            android:layout_gravity="right|center"
-            />
+            android:src="@drawable/ic_article_arrow"
+            android:layout_gravity="right|center"/>
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
