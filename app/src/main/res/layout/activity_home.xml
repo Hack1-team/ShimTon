@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.hackerton.shimton.viewmodel.RoomViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background_color">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_home_title"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="ShimTon"-->
+        <!--            android:src="@drawable/ic_shimton_logo"-->
+        <!--            android:fontFamily="@font/pretendard"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginLeft="20dp"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="25sp"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+        <ImageView
+            android:id="@+id/iv_main_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_shimton_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_home_add_eventpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@color/home_background_color"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_home_add_eventpage"
+            app:layout_constraintBottom_toBottomOf="@id/iv_main_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_main_logo" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_double_line_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_main_logo" />
+
+        <EditText
+            android:id="@+id/et_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/shape_double_line_layout"
+            android:hint="트랙 검색하기"
+            android:paddingLeft="50dp"
+            app:layout_constraintBottom_toBottomOf="@id/et_home_search"
+            app:layout_constraintStart_toStartOf="@id/et_home_search"
+            app:layout_constraintTop_toTopOf="@id/et_home_search" />
+
+        <ImageView
+            android:id="@+id/iv_home_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/search_icon"
+            app:layout_constraintBottom_toBottomOf="@id/et_home_search"
+            app:layout_constraintStart_toStartOf="@id/et_home_search"
+            app:layout_constraintTop_toTopOf="@id/et_home_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@id/et_home_search"
+            app:layout_constraintStart_toStartOf="@id/et_home_search"
+            app:layout_constraintTop_toBottomOf="@id/et_home_search"
+            tools:listitem="@layout/item_eventpage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
