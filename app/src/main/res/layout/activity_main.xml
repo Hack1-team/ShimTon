@@ -9,12 +9,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/home_background_color">
         <TextView
             android:id="@+id/tv_eventpage_home_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="해커톤 이름"
+            android:text="해커톤명"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
             android:textColor="@color/black"
@@ -66,22 +67,24 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    tools:listitem="@layout/item_eventpage_article"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/item_eventpage_article" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/create_room"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
             android:background="@color/white"
+            android:src="@drawable/create_room_icon"
             app:layout_constraintTop_toBottomOf="@id/sv_eventpage_home"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
