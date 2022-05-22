@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2325" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_activity_home_arrow.xml" value="0.181" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_article_arrow.xml" value="0.257" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_article_arrow_on.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_article_icon.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/ic_eventpage_home_bell.xml" value="0.1" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_border_radius_btn.xml" value="0.112" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_border_radius_input.xml" value="0.112" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_border_red.xml" value="0.284" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_dialog.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_double_line_layout.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_half_circle.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/drawable/shape_home_article.xml" value="0.1" />
@@ -25,16 +27,18 @@
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/font/font.xml" value="0.3796875" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/font/font_yeoljeongdo.xml" value="0.1" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_alert.xml" value="0.3089887640449438" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_article_detail.xml" value="0.25" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_article_detail.xml" value="0.22" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_create_article.xml" value="0.18" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_dialog_create_shimton.xml" value="0.33" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_eventpage_home.xml" value="0.25" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/dialog_eventpage_create.xml" value="0.2" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/dialog_eventpage_create.xml" value="0.22" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/dialog_eventpage_password.xml" value="0.2324074074074074" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/dialog_eventpage_profile.xml" value="0.22870370370370371" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/double_line_layout.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_alert.xml" value="0.33" />
-        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_article_detail_comment.xml" value="0.33" />
+        <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_article_detail_comment.xml" value="0.2" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_eventpage.xml" value="0.22" />
         <entry key="..\:/Users/82108/AndroidStudioProjects/2022_hakerton/Shimton/ShimTon/app/src/main/res/layout/item_eventpage_article.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.15476190476190477" />

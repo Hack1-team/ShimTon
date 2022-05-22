@@ -187,7 +187,6 @@ class HomeActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun showCreateDialog() {
-
         val dialogView = Dialog(this)
         val dialogBinding = DialogEventpageCreateBinding.inflate(layoutInflater)
         dialogView.setCancelable(true)

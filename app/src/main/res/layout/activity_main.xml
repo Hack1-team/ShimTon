@@ -15,12 +15,13 @@
             android:id="@+id/tv_eventpage_home_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard"
             android:text="해커톤명"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="25sp"
+            android:textSize="21sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -31,10 +32,10 @@
             android:src="@drawable/ic_eventpage_home_bell"
             android:scaleType="fitXY"
             android:layout_marginRight="20dp"
+            android:background="@color/home_background_color"
             app:layout_constraintTop_toTopOf="@id/tv_eventpage_home_title"
             app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
-            app:layout_constraintEnd_toStartOf="@id/ib_eventpage_home_add_eventpage"
-            android:background="@color/white"/>
+            app:layout_constraintEnd_toStartOf="@id/ib_eventpage_home_add_eventpage"/>
 
         <ImageButton
             android:id="@+id/ib_eventpage_home_add_eventpage"
@@ -46,7 +47,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_eventpage_home_title"
             app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/white"/>
+            android:background="@color/home_background_color"/>
 
         <View
             android:layout_width="fill_parent"
@@ -83,7 +84,7 @@
         <ImageButton
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:background="@color/white"
+            android:background="@color/home_background_color"
             android:src="@drawable/create_room_icon"
             app:layout_constraintTop_toBottomOf="@id/sv_eventpage_home"
             app:layout_constraintStart_toStartOf="parent"
