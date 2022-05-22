@@ -30,8 +30,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:background="@color/white"
             android:scaleType="fitXY"
+            android:background="@android:color/transparent"
             android:src="@drawable/ic_eventpage_home_bell"
             app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
             app:layout_constraintEnd_toStartOf="@id/ib_eventpage_home_add_eventpage"
@@ -42,8 +42,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="30dp"
-            android:background="@color/white"
             android:scaleType="fitXY"
+            android:background="@android:color/transparent"
             android:src="@drawable/ic_home_add_eventpage"
             app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
             app:layout_constraintEnd_toEndOf="parent"
@@ -73,17 +73,80 @@
             app:layout_constraintTop_toBottomOf="@id/line1"
             tools:listitem="@layout/item_eventpage_article" />
 
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <ImageButton
+            android:id="@+id/main_create_article_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:background="@color/white"
-            android:src="@drawable/create_room_icon"
+            android:src="@drawable/ic_main_create_article_btn_icon"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="24dp"
-            />
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/main_icon_study"
+            android:layout_width="72dp"
+            android:layout_height="86dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_main_study_icon"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="@id/main_icon_water"
+            app:layout_constraintEnd_toEndOf="@id/main_icon_water"
+            app:layout_constraintBottom_toTopOf="@+id/main_icon_rest"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="질문 쉼톤"
+            app:layout_constraintStart_toStartOf="@id/main_icon_study"
+            app:layout_constraintEnd_toEndOf="@id/main_icon_study"
+            app:layout_constraintTop_toBottomOf="@id/main_icon_study"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/main_icon_rest"
+            android:layout_width="72dp"
+            android:layout_height="86dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_main_rest_icon"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="@id/main_icon_water"
+            app:layout_constraintEnd_toEndOf="@id/main_icon_water"
+            app:layout_constraintBottom_toTopOf="@id/main_icon_water"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="휴식 쉼톤"
+            app:layout_constraintStart_toStartOf="@id/main_icon_rest"
+            app:layout_constraintEnd_toEndOf="@id/main_icon_rest"
+            app:layout_constraintBottom_toTopOf="@id/main_icon_rest"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/main_icon_water"
+            android:layout_width="72dp"
+            android:layout_height="86dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_main_water_icon"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/main_create_article_btn"
+            app:layout_constraintStart_toStartOf="@id/main_create_article_btn"
+            app:layout_constraintEnd_toEndOf="@id/main_create_article_btn"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타 쉼톤"
+            app:layout_constraintStart_toStartOf="@id/main_icon_water"
+            app:layout_constraintEnd_toEndOf="@id/main_icon_water"
+            app:layout_constraintTop_toBottomOf="@id/main_icon_water"
+            android:visibility="gone"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
