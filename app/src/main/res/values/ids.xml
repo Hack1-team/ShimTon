@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="eventpage_input_code_img" type="id" />
+    <item name="iv_eventpage_input_code_img" type="id" />
+    <item name="iv_eventpage_create_img" type="id" />
+    <item name="iv_run_track_img" type="id" />
+</resources>

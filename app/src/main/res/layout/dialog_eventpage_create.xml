@@ -11,6 +11,16 @@
         android:layout_height="match_parent"
         android:background="@drawable/shape_dialog">
 
+        <ImageView
+            android:id="@id/iv_eventpage_create_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/create_track_img"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
         <TextView
             android:id="@+id/tv_dialog_create_room_title"
             android:layout_width="wrap_content"
@@ -19,9 +29,9 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="28sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/iv_eventpage_create_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
             android:id="@+id/tv_dialog_create_room_exp"
