@@ -29,25 +29,14 @@
             android:id="@+id/ib_eventpage_home_bell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:scaleType="fitXY"
             android:background="@android:color/transparent"
+            android:scaleType="fitXY"
             android:src="@drawable/ic_eventpage_home_bell"
+            android:layout_marginEnd="20dp"
             app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
-            app:layout_constraintEnd_toStartOf="@id/ib_eventpage_home_add_eventpage"
-            app:layout_constraintTop_toTopOf="@id/tv_eventpage_home_title" />
-
-        <ImageButton
-            android:id="@+id/ib_eventpage_home_add_eventpage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:scaleType="fitXY"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_home_add_eventpage"
-            app:layout_constraintBottom_toBottomOf="@id/tv_eventpage_home_title"
+            app:layout_constraintTop_toTopOf="@id/tv_eventpage_home_title"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_eventpage_home_title" />
+            tools:layout_editor_absoluteX="313dp" />
 
         <View
             android:id="@+id/line1"
